@@ -27,9 +27,16 @@
 <p>Fornecedor: Amazon</p>
 <p>Preço: R$ 309,90</p>
 <form action="cart.html" method="POST">
-    <input type="hidden" name="product_id" value="{{ product.id }}">
+    <input type="hidden" name="product_id" value="produto">
     <input type="number" name="quantity" value="1" min="1">
     <button type="submit">Adicionar ao Carrinho</button>
 </form>
 <a href="index.html">Voltar para a Página Inicial</a>
-{% endblock %}
+
+<footer class="footer">
+    <p>&copy; 2024 Stom. Todos os direitos sobre este site e compras e revendas.</p>
+    <p><a href="termos.html">Termos de Serviço</a> | <a href="politica.html">Política de Privacidade</a></p>
+</footer>
+
+        </body>
+</html>

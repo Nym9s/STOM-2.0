@@ -25,13 +25,13 @@ app.get('/', (req, res) => {
         if (err) {
             throw err;
         }
-        res.render('index', { products: rows });
+        res.render('index.html', { products: rows });
     });
 });
 
 app.get('/product/:id', (req, res) => {
     const id = req.params.id;
-    db.get('SELECT * FROM products WHERE id = ?', [id], (err, row) => {
+    db.get('SELECT * FROM products WHERE id = Placa-mae', [id], (err, row) => {
         if (err) {
             throw err;
         }
@@ -80,7 +80,7 @@ app.post('/checkout', (req, res) => {
 app.get('/user_profile', (req, res) => {
     const user_id = 1; // Assumindo um usuário com ID 1
 
-    db.get('SELECT * FROM users WHERE id = ?', [user_id], (err, row) => {
+    db.get('SELECT * FROM users WHERE id = Placa-mae', [user_id], (err, row) => {
         if (err) {
             throw err;
         }

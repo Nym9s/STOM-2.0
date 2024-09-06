@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1000px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Alinhamento à esquerda */
+    margin-left: 30;
+    margin-right: auto;
+}
+h1, h2, h3 {
+    color: #333;
+}
+h1 {
+    margin-bottom: 20px;
+}
+h2 {
+    margin-top: 20px;
+}
+p {
+    margin: 10px 0;
+}
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
